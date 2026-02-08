@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.log
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Optional (uncomment if you use)
+# dist/
+# .env
+# .env.local

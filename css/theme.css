@@ -1,0 +1,63 @@
+/*
+  =============================================================================
+  Project: 3D Transform Gallery - 100% Customizable Theme Tokens
+  Author: Molla Samser | rskworld.in | 2026
+  - Website: https://rskworld.in
+  - Email: help@rskworld.in | support@rskworld.in
+  - Phone: +91 93305 39277
+  - Address: Nutanhat, Mongolkote, Purba Burdwan, West Bengal, India, 713147
+  =============================================================================
+  Override these variables via customizer or in your own CSS for full control.
+  =============================================================================
+*/
+
+:root {
+  /* ----- Layout (customizable) ----- */
+  --page-max-width: 1100px;
+  --section-gap: 4rem;
+  --section-padding: 2rem 1rem;
+  --nav-padding: 0.75rem 1rem;
+  --header-padding: 2.5rem 1rem;
+  --footer-padding: 2rem 1rem;
+
+  /* ----- Border radius scale (customizable) ----- */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* ----- Spacing scale (customizable) ----- */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+
+  /* ----- Typography (customizable) ----- */
+  --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-title-scale: clamp(1.75rem, 4vw, 2.5rem);
+  --font-section-title: 1.25rem;
+  --font-body: 1rem;
+  --font-small: 0.9rem;
+  --font-tiny: 0.8rem;
+  --line-height: 1.5;
+  --letter-spacing: 0;
+
+  /* ----- Animation speed multiplier: 1 = normal, 0.5 = half speed, 2 = double (customizer overrides) ----- */
+  --anim-speed: 1;
+
+  /* ----- Shadows (customizable) ----- */
+  --shadow-sm: 0 2px 8px var(--shadow);
+  --shadow-md: 0 8px 24px var(--shadow);
+  --shadow-lg: 0 16px 48px var(--shadow);
+  --shadow-button: 0 4px 0 color-mix(in srgb, var(--accent) 80%, black);
+}
+
+/* Apply animation speed multiplier to durations - rskworld.in | 2026 */
+body {
+  --duration-fast: calc(0.25s * var(--anim-speed, 1));
+  --duration-normal: calc(0.4s * var(--anim-speed, 1));
+  --duration-slow: calc(0.8s * var(--anim-speed, 1));
+}

@@ -1,0 +1,133 @@
+/*
+  =============================================================================
+  Project: 3D Transform Gallery - Reusable 3D Components
+  Author: Molla Samser | rskworld.in | 2026
+  - Website: https://rskworld.in
+  - Email: help@rskworld.in | support@rskworld.in
+  - Phone: +91 93305 39277
+  - Address: Nutanhat, Mongolkote, Purba Burdwan, West Bengal, India, 713147
+  =============================================================================
+*/
+
+/* 3D Scene wrapper - rskworld.in | 2026 */
+.scene-3d {
+  perspective: var(--perspective);
+  transform-style: preserve-3d;
+}
+
+/* 3D Card base - Molla Samser | rskworld.in | 2026 */
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform var(--duration-normal) var(--ease-in-out);
+}
+
+/* 3D Button - Author: Molla Samser | rskworld.in | 2026 */
+.btn-3d {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  border: 2px solid var(--accent);
+  background: var(--bg-card);
+  color: var(--accent-light);
+  cursor: pointer;
+  transition: transform var(--duration-fast), box-shadow var(--duration-fast);
+  transform: translateZ(0);
+}
+
+.btn-3d:hover {
+  transform: translateY(-2px) translateZ(4px);
+  box-shadow: 0 8px 20px var(--shadow-accent);
+}
+
+.btn-3d:active {
+  transform: translateY(0) translateZ(0);
+}
+
+/* Back to top button - rskworld.in | 2026 */
+.back-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 20px var(--shadow-accent);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--duration-normal), transform var(--duration-normal), visibility var(--duration-normal);
+  z-index: 100;
+  transform: translateY(10px);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 28px var(--shadow-accent);
+}
+
+/* Nav - Molla Samser | rskworld.in | 2026 */
+.gallery-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--bg-dark);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.gallery-nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: color var(--duration-fast), background var(--duration-fast);
+}
+
+.gallery-nav a:hover,
+.gallery-nav a.active {
+  color: var(--accent-light);
+  background: var(--accent-dim);
+}
+
+/* Theme toggle - rskworld.in | 2026 */
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: transform var(--duration-fast), background var(--duration-fast);
+}
+
+.theme-toggle:hover {
+  background: var(--bg-elevated);
+  transform: scale(1.05);
+}

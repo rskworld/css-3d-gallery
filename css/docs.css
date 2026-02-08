@@ -1,0 +1,301 @@
+/*
+  =============================================================================
+  Docs / Downloads page - Bootstrap-docs style (no Bootstrap library)
+  Author: Molla Samser | rskworld.in | 2026
+  Same structure as Bootstrap docs: sections, code blocks, tables, "On this page".
+  =============================================================================
+*/
+
+.docs-main {
+  padding: 2rem 0 3rem;
+}
+
+.docs-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.docs-lead {
+  font-size: 1.1rem;
+  color: var(--text-muted, #64748b);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* On this page (sidebar-style TOC) */
+.docs-on-this-page {
+  padding: 1rem 1.25rem;
+  background: var(--bg-card, #1e293b);
+  border: 1px solid var(--border, rgba(255,255,255,0.08));
+  border-radius: var(--bs-border-radius-lg, 0.5rem);
+}
+
+.docs-sidebar-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted, #94a3b8);
+  margin: 0 0 0.75rem 0;
+}
+
+.docs-toc {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.docs-toc li {
+  margin-bottom: 0.35rem;
+}
+
+.docs-toc a {
+  color: var(--text, #f1f5f9);
+  text-decoration: none;
+  font-size: 0.9375rem;
+}
+
+.docs-toc a:hover {
+  color: var(--accent-light, #6ea8fe);
+  text-decoration: underline;
+}
+
+[data-theme="light"] .docs-on-this-page {
+  background: var(--bg-card);
+  border-color: var(--border);
+}
+
+[data-theme="light"] .docs-toc a {
+  color: var(--text);
+}
+
+/* Section headings */
+.docs-section {
+  margin-bottom: 2.5rem;
+  scroll-margin-top: 1rem;
+}
+
+.docs-h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border, rgba(255,255,255,0.08));
+  color: var(--text, #f1f5f9);
+}
+
+.docs-h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.75rem 0;
+  color: var(--text, #f1f5f9);
+}
+
+.docs-section p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: var(--text, #f1f5f9);
+}
+
+.docs-section ul {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  color: var(--text, #f1f5f9);
+}
+
+.docs-section li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Inline code */
+.docs-inline-code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  padding: 0.2em 0.4em;
+  background: var(--bg-elevated, #334155);
+  border-radius: var(--bs-border-radius-sm, 0.25rem);
+  color: var(--accent-light, #6ea8fe);
+}
+
+[data-theme="light"] .docs-inline-code {
+  background: var(--bg-elevated);
+  color: var(--accent);
+}
+
+/* Output first label */
+.output-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted, #94a3b8);
+  margin-bottom: 0.5rem;
+}
+
+/* Code block with copy section */
+.code-block-wrap {
+  margin: 1rem 0;
+  border: 1px solid var(--border, rgba(255,255,255,0.08));
+  border-radius: var(--bs-border-radius, 0.375rem);
+  overflow: hidden;
+  background: var(--bg-dark, #0f172a);
+}
+
+.code-block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem 0.5rem 1rem;
+  background: var(--bg-elevated, #334155);
+  border-bottom: 1px solid var(--border, rgba(255,255,255,0.08));
+  font-size: 0.8125rem;
+  color: var(--text-muted, #94a3b8);
+}
+
+.code-block-header .btn-copy {
+  padding: 0.25rem 0.6rem;
+  font-size: 0.8125rem;
+  border: 1px solid var(--border, rgba(255,255,255,0.08));
+  border-radius: var(--bs-border-radius-sm, 0.25rem);
+  background: var(--bg-card, #1e293b);
+  color: var(--text, #f1f5f9);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.code-block-header .btn-copy:hover {
+  background: var(--accent, #0d6efd);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.code-block-header .btn-copy.copied {
+  background: var(--bs-success, #198754);
+  border-color: var(--bs-success);
+  color: #fff;
+}
+
+.code-block-wrap .docs-code,
+.code-block-wrap .hero-code,
+.code-block-wrap .home-code {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+
+[data-theme="light"] .code-block-wrap {
+  border-color: var(--border);
+  background: #1e293b;
+}
+
+[data-theme="light"] .code-block-header {
+  background: var(--bg-elevated);
+  border-color: var(--border);
+}
+
+[data-theme="light"] .code-block-header .btn-copy {
+  background: var(--bg-card);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+/* Code blocks (same style as Bootstrap docs) */
+.docs-code-wrap {
+  margin: 1rem 0;
+  position: relative;
+}
+
+.docs-code {
+  display: block;
+  margin: 0;
+  padding: 1rem 1.25rem;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text, #f1f5f9);
+  background: var(--bg-dark, #0f172a);
+  border: 1px solid var(--border, rgba(255,255,255,0.08));
+  border-radius: var(--bs-border-radius, 0.375rem);
+  overflow-x: auto;
+}
+
+.docs-code code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+}
+
+[data-theme="light"] .docs-code {
+  background: #1e293b;
+  border-color: var(--border);
+  color: #e2e8f0;
+}
+
+/* Buttons / actions row */
+.docs-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+/* Tables */
+.docs-table-wrap {
+  overflow-x: auto;
+  margin: 1rem 0;
+  border: 1px solid var(--border, rgba(255,255,255,0.08));
+  border-radius: var(--bs-border-radius, 0.375rem);
+}
+
+.docs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.docs-table th,
+.docs-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border, rgba(255,255,255,0.08));
+  color: var(--text, #f1f5f9);
+}
+
+.docs-table th {
+  font-weight: 600;
+  background: var(--bg-elevated, #334155);
+  color: var(--text, #f1f5f9);
+}
+
+.docs-table tr:last-child td {
+  border-bottom: none;
+}
+
+.docs-table code {
+  font-size: 0.875em;
+  background: var(--bg-elevated, #334155);
+  padding: 0.15em 0.4em;
+  border-radius: var(--bs-border-radius-sm, 0.25rem);
+}
+
+[data-theme="light"] .docs-table th,
+[data-theme="light"] .docs-table td {
+  border-color: var(--border);
+  color: var(--text);
+}
+
+[data-theme="light"] .docs-table th {
+  background: var(--bg-elevated);
+}
+
+/* Muted author line */
+.docs-muted {
+  font-size: 0.9375rem;
+  color: var(--text-muted, #94a3b8) !important;
+}
+
+.docs-muted a {
+  color: var(--accent-light, #6ea8fe);
+}

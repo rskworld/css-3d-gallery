@@ -1,0 +1,16 @@
+{
+  "name": "3d-transform-gallery",
+  "version": "1.0.0",
+  "description": "Pure CSS 3D transformations - Bootstrap-style layout, rskworld.in",
+  "author": "Molla Samser | rskworld.in | 2026",
+  "license": "MIT",
+  "scripts": {
+    "minify": "npm run minify:css && npm run minify:js",
+    "minify:css": "cleancss -o dist/3d-gallery.min.css dist/3d-gallery.css",
+    "minify:js": "terser dist/3d-gallery.js -o dist/3d-gallery.min.js -c -m"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.2",
+    "terser": "^5.27.0"
+  }
+}

@@ -1,0 +1,184 @@
+/*
+  =============================================================================
+  Project: 3D Transform Gallery - Responsive (Bootstrap-like breakpoints)
+  Author: Molla Samser | rskworld.in | 2026
+  - Website: https://rskworld.in
+  - Email: help@rskworld.in | support@rskworld.in
+  - Phone: +91 93305 39277
+  - Address: Nutanhat, Mongolkote, Purba Burdwan, West Bengal, India, 713147
+  =============================================================================
+  Breakpoints: 576px (sm), 768px (md), 992px (lg), 1200px (xl)
+  Use this file on any website - all 3D components scale for mobile/tablet/desktop.
+  =============================================================================
+*/
+
+/* ----- Small devices (landscape phones, 576px and up) ----- */
+@media (max-width: 575.98px) {
+  .gallery-container { padding: 1rem 0.75rem; gap: 2.5rem; }
+  .gallery-header { padding: 1.5rem 0.75rem; }
+  .gallery-header h1 { font-size: 1.5rem; }
+  .gallery-nav { padding: 0.5rem 0.5rem; gap: 0.5rem; }
+  .gallery-nav a { font-size: 0.8rem; padding: 0.35rem 0.5rem; }
+
+  .flip-cards { gap: 1rem; }
+  .flip-card { width: 110px; height: 140px; }
+  .flip-front, .flip-back { font-size: 1rem; }
+
+  .cube-scene { min-height: 200px; }
+  .cube { width: 80px; height: 80px; }
+  .cube-face { width: 80px; height: 80px; font-size: 1.25rem; }
+  .cube-face.front { transform: translateZ(40px); }
+  .cube-face.back { transform: rotateY(180deg) translateZ(40px); }
+  .cube-face.right { transform: rotateY(90deg) translateZ(40px); }
+  .cube-face.left { transform: rotateY(-90deg) translateZ(40px); }
+  .cube-face.top { transform: rotateX(90deg) translateZ(40px); }
+  .cube-face.bottom { transform: rotateX(-90deg) translateZ(40px); }
+
+  .perspective-card { width: 150px; height: 170px; }
+  .perspective-grid { gap: 1rem; }
+
+  .carousel-scene { min-height: 200px; }
+  .carousel { width: 160px; height: 100px; }
+  .carousel-item { width: 60px; height: 80px; margin-left: -30px; margin-top: -40px; font-size: 1.5rem; }
+  .carousel-item:nth-child(1) { transform: rotateY(0deg) translateZ(110px); }
+  .carousel-item:nth-child(2) { transform: rotateY(60deg) translateZ(110px); }
+  .carousel-item:nth-child(3) { transform: rotateY(120deg) translateZ(110px); }
+  .carousel-item:nth-child(4) { transform: rotateY(180deg) translateZ(110px); }
+  .carousel-item:nth-child(5) { transform: rotateY(240deg) translateZ(110px); }
+  .carousel-item:nth-child(6) { transform: rotateY(300deg) translateZ(110px); }
+
+  .tiles-grid { grid-template-columns: repeat(3, 1fr); max-width: 100%; gap: 0.75rem; }
+  .tile { font-size: 1.25rem; }
+
+  .book-stack .stack-item { width: 50px; height: 75px; margin-left: -15px; }
+  .book-stack .stack-item .face { font-size: 0.85rem; }
+
+  .door-panel { width: 100px; height: 130px; }
+  .door-front, .door-back { font-size: 0.9rem; }
+
+  .floating-card { width: 100px; height: 130px; }
+  .floating-card .float-inner { font-size: 0.9rem; }
+
+  .text-3d { font-size: 1.75rem; }
+  .text-3d-scene { min-height: 100px; }
+
+  .frames-row { gap: 1rem; }
+  .frame-3d { width: 95px; height: 115px; }
+  .frame-placeholder { font-size: 1.5rem; }
+
+  .accordion-stack .accordion-card { width: 70px; height: 95px; margin-left: -18px; font-size: 0.8rem; }
+  .ribbon-3d { padding: 0.5rem 1.25rem; font-size: 0.85rem; }
+  .ribbon-3d-scene { min-height: 90px; }
+
+  .iso-grid { grid-template-columns: repeat(3, 52px); grid-template-rows: repeat(2, 46px); gap: 6px; }
+  .iso-card { font-size: 0.75rem; }
+  .iso-card:hover { transform: translateZ(18px) scale(1.1); }
+
+  .curtain-scene { width: 180px; height: 110px; }
+  .popout-btn { padding: 0.6rem 1.2rem; font-size: 0.9rem; }
+  .back-to-top { bottom: 1rem; right: 1rem; width: 42px; height: 42px; font-size: 1.1rem; }
+  .customizer-toggle { bottom: 1rem; left: 1rem; width: 42px; height: 42px; }
+  .customizer-panel { width: min(300px, 100vw); }
+}
+
+/* ----- Medium devices (tablets, 768px and down) ----- */
+@media (max-width: 767.98px) {
+  .gallery-container { max-width: 100%; padding: 1.25rem 1rem; gap: 3rem; }
+  .gallery-section h2 { font-size: 1.1rem; }
+  .flip-card { width: 120px; height: 155px; }
+  .cube { width: 100px; height: 100px; }
+  .cube-face { width: 100px; height: 100px; font-size: 1.5rem; }
+  .cube-face.front { transform: translateZ(50px); }
+  .cube-face.back { transform: rotateY(180deg) translateZ(50px); }
+  .cube-face.right { transform: rotateY(90deg) translateZ(50px); }
+  .cube-face.left { transform: rotateY(-90deg) translateZ(50px); }
+  .cube-face.top { transform: rotateX(90deg) translateZ(50px); }
+  .cube-face.bottom { transform: rotateX(-90deg) translateZ(50px); }
+  .carousel-item:nth-child(1) { transform: rotateY(0deg) translateZ(125px); }
+  .carousel-item:nth-child(2) { transform: rotateY(60deg) translateZ(125px); }
+  .carousel-item:nth-child(3) { transform: rotateY(120deg) translateZ(125px); }
+  .carousel-item:nth-child(4) { transform: rotateY(180deg) translateZ(125px); }
+  .carousel-item:nth-child(5) { transform: rotateY(240deg) translateZ(125px); }
+  .carousel-item:nth-child(6) { transform: rotateY(300deg) translateZ(125px); }
+  .tiles-grid { max-width: 400px; }
+  .perspective-grid { flex-wrap: wrap; justify-content: center; }
+}
+
+/* ----- Large (992px): optional tweaks ----- */
+@media (max-width: 991.98px) {
+  .gallery-nav a:nth-child(n+9) { display: none; }
+  .gallery-nav a[href="gallery.html"],
+  .gallery-nav a[href="experiments.html"],
+  .gallery-nav a[href="showcase.html"] { display: inline-flex; }
+}
+
+/* ----- Showcase / Gallery-extra responsive ----- */
+@media (max-width: 575.98px) {
+  .pyramid { width: 90px; height: 90px; }
+  .pyramid-face { border-left-width: 45px; border-right-width: 45px; border-bottom-width: 90px; }
+  .fan-card { width: 60px; height: 85px; margin-left: -22px; font-size: 1rem; }
+  .prism { width: 75px; height: 75px; }
+  .prism-face { width: 75px; height: 75px; font-size: 1.5rem; }
+  .prism-face:nth-child(1) { transform: rotateY(0deg) translateZ(37px); }
+  .prism-face:nth-child(2) { transform: rotateY(120deg) translateZ(37px); }
+  .prism-face:nth-child(3) { transform: rotateY(240deg) translateZ(37px); }
+  .flip-digit { width: 55px; height: 72px; }
+  .digit-top, .digit-bottom { font-size: 1.75rem; }
+  .parallax-box { width: 160px; height: 100px; }
+  .parallax-layer.back { width: 140px; height: 65px; }
+  .parallax-layer.mid { width: 125px; height: 75px; }
+  .parallax-layer.front { width: 110px; height: 85px; }
+  .cylinder { width: 160px; height: 70px; }
+  .ring { width: 40px; height: 40px; margin-left: -20px; margin-top: -20px; font-size: 0.9rem; }
+  .ring:nth-child(1) { transform: rotateY(0deg) translateZ(50px); }
+  .ring:nth-child(2) { transform: rotateY(72deg) translateZ(50px); }
+  .ring:nth-child(3) { transform: rotateY(144deg) translateZ(50px); }
+  .ring:nth-child(4) { transform: rotateY(216deg) translateZ(50px); }
+  .ring:nth-child(5) { transform: rotateY(288deg) translateZ(50px); }
+  .bent-panel { width: 130px; height: 65px; font-size: 0.9rem; }
+  .rotate-text { font-size: 1.75rem; }
+  .reveal-card { width: 65px; height: 85px; }
+  .fold-card { width: 130px; height: 85px; }
+  .fold-left, .fold-right { font-size: 1.5rem; }
+  .stacked-layer { width: 65px; height: 85px; font-size: 1.25rem; }
+  .peek-card { width: 95px; height: 130px; }
+  .peek-card .face { font-size: 1rem; }
+  .tunnel-frame:nth-child(1) { font-size: 0.65rem; }
+  .slot-machine { width: 55px; height: 75px; }
+  .slot-item { width: 47px; height: 35px; font-size: 1.2rem; }
+  .dice { width: 48px; height: 48px; }
+  .dice-face { width: 48px; height: 48px; font-size: 1.1rem; }
+  .dice-face.f1 { transform: translateZ(24px); }
+  .dice-face.f2 { transform: rotateY(180deg) translateZ(24px); }
+  .dice-face.f3 { transform: rotateY(90deg) translateZ(24px); }
+  .dice-face.f4 { transform: rotateY(-90deg) translateZ(24px); }
+  .dice-face.f5 { transform: rotateX(90deg) translateZ(24px); }
+  .dice-face.f6 { transform: rotateX(-90deg) translateZ(24px); }
+  .depth-title .layer { font-size: 1.5rem; }
+  .deck-card { width: 65px; height: 90px; font-size: 0.85rem; }
+  .orb { width: 60px; height: 60px; }
+  .badge-3d { width: 55px; height: 55px; font-size: 1.2rem; }
+  .photo-stack .polaroid { width: 75px; height: 95px; padding: 6px 6px 18px; }
+  .photo-stack .polaroid .img-area { height: 55px; font-size: 1.2rem; }
+  .flip-counter-digit { width: 36px; height: 48px; }
+  .flip-counter-digit .half { font-size: 1.5rem; }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .cube { width: 110px; height: 110px; }
+  .cube-face { width: 110px; height: 110px; }
+  .cube-face.front { transform: translateZ(55px); }
+  .cube-face.back { transform: rotateY(180deg) translateZ(55px); }
+  .cube-face.right { transform: rotateY(90deg) translateZ(55px); }
+  .cube-face.left { transform: rotateY(-90deg) translateZ(55px); }
+  .cube-face.top { transform: rotateX(90deg) translateZ(55px); }
+  .cube-face.bottom { transform: rotateX(-90deg) translateZ(55px); }
+}
+
+/* ----- Reduce motion (accessibility) ----- */
+@media (prefers-reduced-motion: reduce) {
+  .flip-inner, .flip-card .flip-inner, .door-inner, .flip-digit .digit-inner,
+  .reveal-inner, .peek-card .face.front, .cube, .carousel, .prism, .pyramid,
+  .dice, .cylinder, .slot-strip, .floating-card, .tile, .orb,
+  .rotate-text, .bent-panel, .ribbon-3d, .text-3d { animation: none !important; transition-duration: 0.01ms !important; }
+}

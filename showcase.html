@@ -1,0 +1,936 @@
+<!--
+  =============================================================================
+  Project: 3D Transform Gallery - Showcase (Bootstrap-style, no Bootstrap library)
+  Author: Molla Samser | rskworld.in | 2026
+  =============================================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Molla Samser - rskworld.in">
+  <meta name="description" content="Unique 3D CSS showcase - isometric, curtain, dice, tunnel, orb by rskworld.in">
+  <title>3D Showcase | rskworld.in</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/bootstrap-replica.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/ui.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/docs.css">
+  <link rel="stylesheet" href="css/showcase.css">
+  <link rel="stylesheet" href="css/features-extra.css">
+  <link rel="stylesheet" href="css/customizer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">3D Gallery</a>
+      <div class="navbar-collapse">
+        <ul class="navbar-nav gallery-nav">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="gallery.html">More</a></li>
+          <li><a class="nav-link" href="experiments.html">Experiments</a></li>
+          <li><a class="nav-link active" href="showcase.html">Showcase</a></li>
+          <li><a class="nav-link" href="downloads.html">Downloads</a></li>
+        </ul>
+        <div class="d-flex gap-2 align-items-center ms-auto"><button type="button" class="btn btn-sm btn-outline-light" id="theme-toggle" aria-label="Toggle theme">&#9728;</button></div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="home-hero">
+      <div class="container">
+        <h1 class="hero-title">Unique 3D <span class="highlight">showcase</span></h1>
+        <p class="hero-lead">35+ distinctive CSS 3D effects: isometric, curtain, tunnel, dice, coin flip, card lift, sliding door, shutter, icon buttons, fan out, corner peel, layered cards and more. All working, pure CSS.</p>
+        <p class="hero-version"><a href="index.html">Home</a> · <a href="https://rskworld.in" target="_blank" rel="noopener">rskworld.in</a> · 2026</p>
+      </div>
+    </section>
+
+    <div class="home-main">
+      <div class="container">
+        <section id="isometric" class="home-section">
+          <h2 class="section-title">Isometric Card Grid</h2>
+          <p class="section-lead">Hover a tile to pop it out.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="iso-scene">
+              <div class="iso-grid">
+                <div class="iso-card">1</div>
+                <div class="iso-card">2</div>
+                <div class="iso-card">3</div>
+                <div class="iso-card">4</div>
+                <div class="iso-card">5</div>
+                <div class="iso-card">6</div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="iso-scene"&gt;
+  &lt;div class="iso-grid"&gt;
+    &lt;div class="iso-card"&gt;1&lt;/div&gt;
+    &lt;div class="iso-card"&gt;2&lt;/div&gt;
+    &lt;div class="iso-card"&gt;3&lt;/div&gt;
+    &lt;div class="iso-card"&gt;4&lt;/div&gt;
+    &lt;div class="iso-card"&gt;5&lt;/div&gt;
+    &lt;div class="iso-card"&gt;6&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+        <section id="curtain" class="home-section">
+          <h2 class="section-title">3D Curtain Reveal</h2>
+          <p class="section-lead">Hover to open.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="curtain-scene">
+              <div class="curtain-back">Reveal</div>
+              <div class="curtain-left">L</div>
+              <div class="curtain-right">R</div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="curtain-scene"&gt;
+  &lt;div class="curtain-back"&gt;Reveal&lt;/div&gt;
+  &lt;div class="curtain-left"&gt;L&lt;/div&gt;
+  &lt;div class="curtain-right"&gt;R&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+        <section id="popout" class="home-section">
+          <h2 class="section-title">3D Pop-Out Button</h2>
+          <p class="section-lead">Button comes out of screen.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="popout-scene">
+              <button type="button" class="popout-btn btn btn-primary">Click Me</button>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="popout-scene"&gt;
+  &lt;button type="button" class="popout-btn btn btn-primary"&gt;Click Me&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+        <section id="peek" class="home-section">
+          <h2 class="section-title">3D Peek Card</h2>
+          <p class="section-lead">Hover to peek.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="peek-scene">
+              <div class="peek-card">
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="peek-scene"&gt;
+  &lt;div class="peek-card"&gt;
+    &lt;div class="face front"&gt;Front&lt;/div&gt;
+    &lt;div class="face back"&gt;Back&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+        <section id="tunnel" class="home-section">
+          <h2 class="section-title">Perspective Tunnel</h2>
+          <p class="section-lead">Infinite depth.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="tunnel-scene">
+              <div class="tunnel">
+                <div class="tunnel-frame">1</div>
+                <div class="tunnel-frame">2</div>
+                <div class="tunnel-frame">3</div>
+                <div class="tunnel-frame">4</div>
+                <div class="tunnel-frame">5</div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="tunnel-scene"&gt;&lt;div class="tunnel"&gt;&lt;div class="tunnel-frame"&gt;1&lt;/div&gt;...&lt;/div&gt;&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+        <section id="slot" class="home-section">
+          <h2 class="section-title">Slot Reel</h2>
+          <p class="section-lead">Vertical spin.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="slot-scene">
+              <div class="slot-machine">
+                <div class="slot-strip">
+                  <div class="slot-item">7</div>
+                  <div class="slot-item">★</div>
+                  <div class="slot-item">◆</div>
+                  <div class="slot-item">7</div>
+                  <div class="slot-item">★</div>
+                  <div class="slot-item">◆</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="slot-scene"&gt;&lt;div class="slot-machine"&gt;&lt;div class="slot-strip"&gt;&lt;div class="slot-item"&gt;7&lt;/div&gt;...&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+        <section id="dice" class="home-section">
+          <h2 class="section-title">Tumbling Dice</h2>
+          <p class="section-lead">3D die animation.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="dice-scene">
+              <div class="dice">
+                <div class="dice-face f1">1</div>
+                <div class="dice-face f2">2</div>
+                <div class="dice-face f3">3</div>
+                <div class="dice-face f4">4</div>
+                <div class="dice-face f5">5</div>
+                <div class="dice-face f6">6</div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="dice-scene"&gt;&lt;div class="dice"&gt;&lt;div class="dice-face f1"&gt;1&lt;/div&gt;...&lt;/div&gt;&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+        <section id="depth-title" class="home-section">
+          <h2 class="section-title">Layered Depth Title</h2>
+          <p class="section-lead">Hover to expand depth.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="depth-title-scene">
+              <h3 class="depth-title">
+                <span class="layer">DEPTH</span>
+                <span class="layer">DEPTH</span>
+                <span class="layer">DEPTH</span>
+                <span class="layer">DEPTH</span>
+                <span class="layer">DEPTH</span>
+              </h3>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="depth-title-scene"&gt;&lt;h3 class="depth-title"&gt;&lt;span class="layer"&gt;DEPTH&lt;/span&gt;...&lt;/h3&gt;&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+        <section id="deck" class="home-section">
+          <h2 class="section-title">Card Deck Spread</h2>
+          <p class="section-lead">Hover to spread.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="deck-scene">
+              <div class="deck">
+                <div class="deck-card">A</div>
+                <div class="deck-card">B</div>
+                <div class="deck-card">C</div>
+                <div class="deck-card">D</div>
+                <div class="deck-card">E</div>
+                <div class="deck-card">F</div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="deck-scene"&gt;&lt;div class="deck"&gt;&lt;div class="deck-card"&gt;A&lt;/div&gt;...&lt;/div&gt;&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+        <section id="orb" class="home-section">
+          <h2 class="section-title">Floating Orb</h2>
+          <p class="section-lead">Gradient sphere.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="orb-scene">
+              <div class="orb" aria-hidden="true"></div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="orb-scene"&gt;&lt;div class="orb"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+        <section id="badge" class="home-section">
+          <h2 class="section-title">3D Badge</h2>
+          <p class="section-lead">Hover to tilt.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="badge-scene">
+              <div class="badge-3d">1</div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="badge-scene"&gt;&lt;div class="badge-3d"&gt;1&lt;/div&gt;&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+        <section id="photo-stack" class="home-section">
+          <h2 class="section-title">3D Photo Stack</h2>
+          <p class="section-lead">Polaroid stack.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="photo-stack-scene">
+              <div class="photo-stack">
+                <div class="polaroid"><div class="img-area">A</div></div>
+                <div class="polaroid"><div class="img-area">B</div></div>
+                <div class="polaroid"><div class="img-area">C</div></div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="photo-stack-scene"&gt;&lt;div class="photo-stack"&gt;&lt;div class="polaroid"&gt;&lt;div class="img-area"&gt;A&lt;/div&gt;&lt;/div&gt;...&lt;/div&gt;&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+        <section id="flip-counter" class="home-section">
+          <h2 class="section-title">3D Flip Counter</h2>
+          <p class="section-lead">Hover to flip.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="flip-counter-scene">
+              <div class="flip-counter-digit"><div class="digit-wrap"><div class="half top">5</div><div class="half bottom">5</div></div></div>
+              <div class="flip-counter-digit"><div class="digit-wrap"><div class="half top">9</div><div class="half bottom">9</div></div></div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="flip-counter-scene"&gt;&lt;div class="flip-counter-digit"&gt;&lt;div class="digit-wrap"&gt;&lt;div class="half top"&gt;5&lt;/div&gt;&lt;div class="half bottom"&gt;5&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;...&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="coin-flip" class="home-section">
+          <h2 class="section-title">3D Coin Flip</h2>
+          <p class="section-lead">Flip on X axis like a coin. Hover to flip.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="coin-flip-scene">
+              <div class="coin-flip">
+                <div class="coin-flip-inner">
+                  <div class="coin-face heads">H</div>
+                  <div class="coin-face tails">T</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="coin-flip-scene"&gt;
+  &lt;div class="coin-flip"&gt;
+    &lt;div class="coin-flip-inner"&gt;
+      &lt;div class="coin-face heads"&gt;H&lt;/div&gt;
+      &lt;div class="coin-face tails"&gt;T&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="card-lift" class="home-section">
+          <h2 class="section-title">3D Card Lift</h2>
+          <p class="section-lead">Card lifts with perspective and shadow on hover.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="card-lift-scene">
+              <div class="card-lift">Lift</div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="card-lift-scene"&gt;
+  &lt;div class="card-lift"&gt;Lift&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="folded-corner" class="home-section">
+          <h2 class="section-title">3D Folded Corner Tag</h2>
+          <p class="section-lead">Badge with folded corner. Hover to tilt.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="folded-corner-scene">
+              <div class="folded-tag">NEW</div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="folded-corner-scene"&gt;
+  &lt;div class="folded-tag"&gt;NEW&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="revolving-door" class="home-section">
+          <h2 class="section-title">3D Revolving Door</h2>
+          <p class="section-lead">Panels rotate on hover like a revolving door.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="revolving-scene">
+              <div class="revolving-door">
+                <div class="revolving-panel">1</div>
+                <div class="revolving-panel">2</div>
+                <div class="revolving-panel">3</div>
+                <div class="revolving-panel">4</div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="revolving-scene"&gt;
+  &lt;div class="revolving-door"&gt;
+    &lt;div class="revolving-panel"&gt;1&lt;/div&gt;
+    &lt;div class="revolving-panel"&gt;2&lt;/div&gt;
+    &lt;div class="revolving-panel"&gt;3&lt;/div&gt;
+    &lt;div class="revolving-panel"&gt;4&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="bouncing-ball" class="home-section">
+          <h2 class="section-title">3D Bouncing Ball</h2>
+          <p class="section-lead">Sphere with bounce animation. Hover to pause.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="bounce-scene">
+              <div class="bounce-ball" aria-hidden="true"></div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="bounce-scene"&gt;
+  &lt;div class="bounce-ball"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="book-open" class="home-section">
+          <h2 class="section-title">3D Book Open</h2>
+          <p class="section-lead">Two panels open like a book on hover.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="book-open-scene">
+              <div class="book-open">
+                <div class="book-page">L</div>
+                <div class="book-page">R</div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="book-open-scene"&gt;
+  &lt;div class="book-open"&gt;
+    &lt;div class="book-page"&gt;L&lt;/div&gt;
+    &lt;div class="book-page"&gt;R&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="zigzag-strip" class="home-section">
+          <h2 class="section-title">3D Zigzag Strip</h2>
+          <p class="section-lead">Alternating segments tilt in 3D. Hover to expand.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="zigzag-scene">
+              <div class="zigzag-strip">
+                <div class="zigzag-segment">1</div>
+                <div class="zigzag-segment">2</div>
+                <div class="zigzag-segment">3</div>
+                <div class="zigzag-segment">4</div>
+                <div class="zigzag-segment">5</div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="zigzag-scene"&gt;
+  &lt;div class="zigzag-strip"&gt;
+    &lt;div class="zigzag-segment"&gt;1&lt;/div&gt;
+    &lt;div class="zigzag-segment"&gt;2&lt;/div&gt;
+    &lt;div class="zigzag-segment"&gt;3&lt;/div&gt;
+    &lt;div class="zigzag-segment"&gt;4&lt;/div&gt;
+    &lt;div class="zigzag-segment"&gt;5&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="flip-panel" class="home-section">
+          <h2 class="section-title">3D Flip Panel (vertical)</h2>
+          <p class="section-lead">Panel flips on X axis to reveal back. Hover to flip.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="flip-panel-scene">
+              <div class="flip-panel">
+                <div class="flip-panel-inner">
+                  <div class="flip-panel-front">?</div>
+                  <div class="flip-panel-back">OK</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="flip-panel-scene"&gt;
+  &lt;div class="flip-panel"&gt;
+    &lt;div class="flip-panel-inner"&gt;
+      &lt;div class="flip-panel-front"&gt;?&lt;/div&gt;
+      &lt;div class="flip-panel-back"&gt;OK&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="tile-pop" class="home-section">
+          <h2 class="section-title">3D Tile Pop</h2>
+          <p class="section-lead">Tiles pop out with depth on hover.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="tile-pop-scene">
+              <div class="tile-pop">1</div>
+              <div class="tile-pop">2</div>
+              <div class="tile-pop">3</div>
+              <div class="tile-pop">4</div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="tile-pop-scene"&gt;
+  &lt;div class="tile-pop"&gt;1&lt;/div&gt;
+  &lt;div class="tile-pop"&gt;2&lt;/div&gt;
+  &lt;div class="tile-pop"&gt;3&lt;/div&gt;
+  &lt;div class="tile-pop"&gt;4&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="neon-text" class="home-section">
+          <h2 class="section-title">3D Neon Glow Text</h2>
+          <p class="section-lead">Text with neon glow and 3D tilt. Hover to brighten.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="neon-scene">
+              <span class="neon-text">NEON</span>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="neon-scene"&gt;
+  &lt;span class="neon-text"&gt;NEON&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="slide-door" class="home-section">
+          <h2 class="section-title">3D Sliding Door</h2>
+          <p class="section-lead">Left and right panels slide open in 3D. Hover to reveal.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="slide-door-scene">
+              <div class="slide-door">
+                <div class="slide-door-panel left">L</div>
+                <div class="slide-door-panel right">R</div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="slide-door-scene"&gt;
+  &lt;div class="slide-door"&gt;
+    &lt;div class="slide-door-panel left"&gt;L&lt;/div&gt;
+    &lt;div class="slide-door-panel right"&gt;R&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="ring-3d" class="home-section">
+          <h2 class="section-title">3D Rotating Ring</h2>
+          <p class="section-lead">Ring spins in 3D. Hover to pause and scale.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="ring-3d-scene">
+              <div class="ring-3d" aria-hidden="true"></div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="ring-3d-scene"&gt;
+  &lt;div class="ring-3d"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="stamp-3d" class="home-section">
+          <h2 class="section-title">3D Stamp / Pressed Badge</h2>
+          <p class="section-lead">Pressed stamp effect with 3D depth. Hover to lift.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="stamp-scene">
+              <span class="stamp-3d">DONE</span>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="stamp-scene"&gt;
+  &lt;span class="stamp-3d"&gt;DONE&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="wave-strip" class="home-section">
+          <h2 class="section-title">3D Wave Strip</h2>
+          <p class="section-lead">Blocks wave in 3D on hover. Staggered animation.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="wave-scene">
+              <div class="wave-strip">
+                <div class="wave-block"></div>
+                <div class="wave-block"></div>
+                <div class="wave-block"></div>
+                <div class="wave-block"></div>
+                <div class="wave-block"></div>
+                <div class="wave-block"></div>
+                <div class="wave-block"></div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="wave-scene"&gt;
+  &lt;div class="wave-strip"&gt;
+    &lt;div class="wave-block"&gt;&lt;/div&gt;
+    &lt;div class="wave-block"&gt;&lt;/div&gt;
+    &lt;div class="wave-block"&gt;&lt;/div&gt;
+    &lt;!-- more --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="diagonal-flip" class="home-section">
+          <h2 class="section-title">3D Diagonal Flip</h2>
+          <p class="section-lead">Card flips on both X and Y (diagonal). Hover to flip.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="diagonal-flip-scene">
+              <div class="diagonal-flip">
+                <div class="diagonal-flip-inner">
+                  <div class="diagonal-face a">A</div>
+                  <div class="diagonal-face b">B</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="diagonal-flip-scene"&gt;
+  &lt;div class="diagonal-flip"&gt;
+    &lt;div class="diagonal-flip-inner"&gt;
+      &lt;div class="diagonal-face a"&gt;A&lt;/div&gt;
+      &lt;div class="diagonal-face b"&gt;B&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="glow-box" class="home-section">
+          <h2 class="section-title">3D Glowing Border Box</h2>
+          <p class="section-lead">Box with glow and 3D tilt on hover.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="glow-box-scene">
+              <div class="glow-box">GLOW</div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="glow-box-scene"&gt;
+  &lt;div class="glow-box"&gt;GLOW&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="stack-spread" class="home-section">
+          <h2 class="section-title">3D Stack Spread</h2>
+          <p class="section-lead">Stack of cards spreads on hover with 3D depth.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="stack-spread-scene">
+              <div class="stack-spread">
+                <div class="stack-spread-card">1</div>
+                <div class="stack-spread-card">2</div>
+                <div class="stack-spread-card">3</div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="stack-spread-scene"&gt;
+  &lt;div class="stack-spread"&gt;
+    &lt;div class="stack-spread-card"&gt;1&lt;/div&gt;
+    &lt;div class="stack-spread-card"&gt;2&lt;/div&gt;
+    &lt;div class="stack-spread-card"&gt;3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="tilt-menu" class="home-section">
+          <h2 class="section-title">3D Tilt Menu</h2>
+          <p class="section-lead">Menu items tilt in 3D on hover.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="tilt-menu-scene">
+              <span class="tilt-menu-item">Home</span>
+              <span class="tilt-menu-item">About</span>
+              <span class="tilt-menu-item">Contact</span>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="tilt-menu-scene"&gt;
+  &lt;span class="tilt-menu-item"&gt;Home&lt;/span&gt;
+  &lt;span class="tilt-menu-item"&gt;About&lt;/span&gt;
+  &lt;span class="tilt-menu-item"&gt;Contact&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="progress-arc" class="home-section">
+          <h2 class="section-title">3D Progress Arc</h2>
+          <p class="section-lead">Circular progress with 3D tilt. Hover to fill.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="progress-arc-scene">
+              <div class="progress-arc" aria-hidden="true"></div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="progress-arc-scene"&gt;
+  &lt;div class="progress-arc"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="pulse-circle" class="home-section">
+          <h2 class="section-title">3D Pulsing Circle</h2>
+          <p class="section-lead">Circle with pulse animation and 3D tilt. Hover to pause.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="pulse-circle-scene">
+              <div class="pulse-circle" aria-hidden="true"></div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="pulse-circle-scene"&gt;
+  &lt;div class="pulse-circle"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="shutter" class="home-section">
+          <h2 class="section-title">3D Shutter Reveal</h2>
+          <p class="section-lead">Horizontal slats open in 3D on hover.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="shutter-scene">
+              <div class="shutter-box">
+                <div class="shutter-slat">1</div>
+                <div class="shutter-slat">2</div>
+                <div class="shutter-slat">3</div>
+                <div class="shutter-slat">4</div>
+                <div class="shutter-slat">5</div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="shutter-scene"&gt;
+  &lt;div class="shutter-box"&gt;
+    &lt;div class="shutter-slat"&gt;1&lt;/div&gt;
+    &lt;div class="shutter-slat"&gt;2&lt;/div&gt;
+    &lt;div class="shutter-slat"&gt;3&lt;/div&gt;
+    &lt;div class="shutter-slat"&gt;4&lt;/div&gt;
+    &lt;div class="shutter-slat"&gt;5&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="icon-btn-3d" class="home-section">
+          <h2 class="section-title">3D Icon Button</h2>
+          <p class="section-lead">Buttons with 3D lift and press effect.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="icon-btn-3d-scene">
+              <button type="button" class="icon-btn-3d" aria-label="Like">&#9829;</button>
+              <button type="button" class="icon-btn-3d" aria-label="Star">&#9733;</button>
+              <button type="button" class="icon-btn-3d" aria-label="Share">&#10150;</button>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="icon-btn-3d-scene"&gt;
+  &lt;button type="button" class="icon-btn-3d"&gt;&amp;#9829;&lt;/button&gt;
+  &lt;button type="button" class="icon-btn-3d"&gt;&amp;#9733;&lt;/button&gt;
+  &lt;button type="button" class="icon-btn-3d"&gt;&amp;#10150;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="fan-out" class="home-section">
+          <h2 class="section-title">3D Card Fan Out</h2>
+          <p class="section-lead">Cards fan out from center on hover.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="fan-out-scene">
+              <div class="fan-out">
+                <div class="fan-out-card">A</div>
+                <div class="fan-out-card">B</div>
+                <div class="fan-out-card">C</div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="fan-out-scene"&gt;
+  &lt;div class="fan-out"&gt;
+    &lt;div class="fan-out-card"&gt;A&lt;/div&gt;
+    &lt;div class="fan-out-card"&gt;B&lt;/div&gt;
+    &lt;div class="fan-out-card"&gt;C&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="peel-card" class="home-section">
+          <h2 class="section-title">3D Corner Peel</h2>
+          <p class="section-lead">Card corner peels up in 3D on hover.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="peel-scene">
+              <div class="peel-card">
+                <div class="peel-card-inner">Peel</div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="peel-scene"&gt;
+  &lt;div class="peel-card"&gt;
+    &lt;div class="peel-card-inner"&gt;Peel&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+
+        <section id="layered-cards" class="home-section">
+          <h2 class="section-title">3D Layered Cards</h2>
+          <p class="section-lead">Stack of cards with depth. Hover to lift front.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="layered-cards-scene">
+              <div class="layered-cards">
+                <div class="layered-card">1</div>
+                <div class="layered-card">2</div>
+                <div class="layered-card">3</div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="layered-cards-scene"&gt;
+  &lt;div class="layered-cards"&gt;
+    &lt;div class="layered-card"&gt;1&lt;/div&gt;
+    &lt;div class="layered-card"&gt;2&lt;/div&gt;
+    &lt;div class="layered-card"&gt;3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">&#8593;</button>
+  <footer class="footer-replica">
+    <div class="container text-center">
+      <p class="mb-2"><a href="index.html">Home</a> &bull; <a href="gallery.html">More</a> &bull; <a href="experiments.html">Experiments</a> &bull; <a href="showcase.html">Showcase</a> &bull; <a href="downloads.html">Downloads</a> &bull; <a href="https://rskworld.in" target="_blank" rel="noopener">rskworld.in</a></p>
+      <p class="mb-2 small">Docs: <a href="README.md" target="_blank" rel="noopener">README</a> &bull; <a href="USAGE.md" target="_blank" rel="noopener">USAGE</a> &bull; <a href="CUSTOMIZE.md" target="_blank" rel="noopener">CUSTOMIZE</a> &bull; <a href="CHANGELOG.md" target="_blank" rel="noopener">CHANGELOG</a> &bull; <a href="CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING</a> &bull; <a href="LICENSE.md" target="_blank" rel="noopener">LICENSE</a></p>
+      <p class="text-muted mb-0 small">3D Transform Gallery &bull; Molla Samser &bull; &copy; 2026</p>
+    </div>
+  </footer>
+  <button type="button" id="customizer-toggle" class="customizer-toggle" aria-label="Open customizer" aria-expanded="false">&#9881;</button>
+  <div id="customizer-overlay" class="customizer-overlay" aria-hidden="true"></div>
+  <aside id="customizer-panel" class="customizer-panel" aria-label="Customize theme">
+    <div class="customizer-panel-header"><h3>Customize</h3><button type="button" class="customizer-close" aria-label="Close">&times;</button></div>
+    <div class="customizer-body">
+      <div class="customizer-group"><label>Accent color</label><div class="accent-presets">
+        <button type="button" data-accent="blue" title="Blue"></button><button type="button" data-accent="green" title="Green"></button>
+        <button type="button" data-accent="purple" title="Purple"></button><button type="button" data-accent="orange" title="Orange"></button>
+        <button type="button" data-accent="pink" title="Pink"></button><button type="button" data-accent="teal" title="Teal"></button>
+      </div></div>
+      <div class="customizer-group"><label>Animation speed</label><input type="range" id="customizer-speed" class="customizer-slider" min="0.5" max="2" step="0.1" value="1"><span id="customizer-speed-value" class="hint">1x</span></div>
+      <div class="customizer-group"><label>Border radius</label><input type="range" id="customizer-radius" class="customizer-slider" min="0" max="24" step="2" value="10"><span id="customizer-radius-value" class="hint">10px</span></div>
+      <div class="customizer-group"><label>Theme</label><select id="customizer-theme"><option value="auto">Auto</option><option value="light">Light</option><option value="dark">Dark</option></select></div>
+      <button type="button" class="customizer-reset">Reset to default</button>
+    </div>
+  </aside>
+  <script src="main.js"></script>
+  <script src="js/customizer.js"></script>
+</body>
+</html>

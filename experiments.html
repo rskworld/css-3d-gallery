@@ -1,0 +1,205 @@
+<!--
+  =============================================================================
+  Project: 3D Transform Gallery - Experiments (Bootstrap-style, no Bootstrap library)
+  Author: Molla Samser | rskworld.in | 2026
+  =============================================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Molla Samser - rskworld.in">
+  <meta name="description" content="3D CSS experiments - bent panel, rotating text, card reveal by rskworld.in">
+  <title>3D Experiments | rskworld.in</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/bootstrap-replica.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/ui.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/docs.css">
+  <link rel="stylesheet" href="css/experiments.css">
+  <link rel="stylesheet" href="css/customizer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">3D Gallery</a>
+      <div class="navbar-collapse">
+        <ul class="navbar-nav gallery-nav">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="gallery.html">More</a></li>
+          <li><a class="nav-link active" href="experiments.html">Experiments</a></li>
+          <li><a class="nav-link" href="showcase.html">Showcase</a></li>
+          <li><a class="nav-link" href="downloads.html">Downloads</a></li>
+        </ul>
+        <div class="d-flex gap-2 align-items-center ms-auto"><button type="button" class="btn btn-sm btn-outline-light" id="theme-toggle" aria-label="Toggle theme">&#9728;</button></div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="home-hero">
+      <div class="container">
+        <h1 class="hero-title">3D <span class="highlight">experiments</span></h1>
+        <p class="hero-lead">Extra CSS 3D experiments and ideas. Bent panel, rotating text, card reveal, folding card, stacked layers.</p>
+        <p class="hero-version"><a href="index.html">Home</a> · <a href="https://rskworld.in" target="_blank" rel="noopener">rskworld.in</a> · 2026</p>
+      </div>
+    </section>
+
+    <div class="home-main">
+      <div class="container">
+        <section id="bent-panel" class="home-section">
+          <h2 class="section-title">Bent Panel</h2>
+          <p class="section-lead">Panel with 3D bend on hover.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="bent-panel-scene">
+              <div class="bent-panel"><span>Hover me</span></div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="bent-panel-scene"&gt;
+  &lt;div class="bent-panel"&gt;&lt;span&gt;Hover me&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+        <section id="rotating-text" class="home-section">
+          <h2 class="section-title">Rotating 3D Text</h2>
+          <p class="section-lead">Text with continuous 3D rotation.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="rotate-text-scene">
+              <div class="rotate-text">CSS 3D</div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="rotate-text-scene"&gt;
+  &lt;div class="rotate-text"&gt;CSS 3D&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+        <section id="card-reveal" class="home-section">
+          <h2 class="section-title">Card Reveal</h2>
+          <p class="section-lead">Hover to reveal back.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="reveal-cards">
+              <div class="reveal-card">
+                <div class="reveal-inner">
+                  <div class="reveal-front">?</div>
+                  <div class="reveal-back">A</div>
+                </div>
+              </div>
+              <div class="reveal-card">
+                <div class="reveal-inner">
+                  <div class="reveal-front">?</div>
+                  <div class="reveal-back">B</div>
+                </div>
+              </div>
+              <div class="reveal-card">
+                <div class="reveal-inner">
+                  <div class="reveal-front">?</div>
+                  <div class="reveal-back">C</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="reveal-cards"&gt;
+  &lt;div class="reveal-card"&gt;
+    &lt;div class="reveal-inner"&gt;
+      &lt;div class="reveal-front"&gt;?&lt;/div&gt;
+      &lt;div class="reveal-back"&gt;A&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- repeat for B, C --&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+        <section id="folding-card" class="home-section">
+          <h2 class="section-title">Folding Card</h2>
+          <p class="section-lead">Hover to fold in 3D.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="fold-scene">
+              <div class="fold-card">
+                <div class="fold-left">L</div>
+                <div class="fold-right">R</div>
+              </div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="fold-scene"&gt;
+  &lt;div class="fold-card"&gt;
+    &lt;div class="fold-left"&gt;L&lt;/div&gt;
+    &lt;div class="fold-right"&gt;R&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+        <section id="stacked-layers" class="home-section">
+          <h2 class="section-title">Stacked 3D Layers</h2>
+          <p class="section-lead">Layers with translateZ.</p>
+          <p class="output-label">Output</p>
+          <div class="home-section-demo">
+            <div class="stacked-scene">
+              <div class="stacked-layer stacked-back">1</div>
+              <div class="stacked-layer stacked-mid">2</div>
+              <div class="stacked-layer stacked-front">3</div>
+            </div>
+          </div>
+          <p class="output-label">Code</p>
+          <div class="code-block-wrap">
+            <div class="code-block-header"><span>HTML</span><button type="button" class="btn-copy" aria-label="Copy">Copy</button></div>
+            <pre class="docs-code"><code>&lt;div class="stacked-scene"&gt;
+  &lt;div class="stacked-layer stacked-back"&gt;1&lt;/div&gt;
+  &lt;div class="stacked-layer stacked-mid"&gt;2&lt;/div&gt;
+  &lt;div class="stacked-layer stacked-front"&gt;3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">&#8593;</button>
+  <footer class="footer-replica">
+    <div class="container text-center">
+      <p class="mb-2"><a href="index.html">Home</a> &bull; <a href="gallery.html">More</a> &bull; <a href="experiments.html">Experiments</a> &bull; <a href="showcase.html">Showcase</a> &bull; <a href="downloads.html">Downloads</a> &bull; <a href="https://rskworld.in" target="_blank" rel="noopener">rskworld.in</a></p>
+      <p class="mb-2 small">Docs: <a href="README.md" target="_blank" rel="noopener">README</a> &bull; <a href="USAGE.md" target="_blank" rel="noopener">USAGE</a> &bull; <a href="CUSTOMIZE.md" target="_blank" rel="noopener">CUSTOMIZE</a> &bull; <a href="CHANGELOG.md" target="_blank" rel="noopener">CHANGELOG</a> &bull; <a href="CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING</a> &bull; <a href="LICENSE.md" target="_blank" rel="noopener">LICENSE</a></p>
+      <p class="text-muted mb-0 small">3D Transform Gallery &bull; Molla Samser &bull; &copy; 2026</p>
+    </div>
+  </footer>
+  <button type="button" id="customizer-toggle" class="customizer-toggle" aria-label="Open customizer" aria-expanded="false">&#9881;</button>
+  <div id="customizer-overlay" class="customizer-overlay" aria-hidden="true"></div>
+  <aside id="customizer-panel" class="customizer-panel" aria-label="Customize theme">
+    <div class="customizer-panel-header"><h3>Customize</h3><button type="button" class="customizer-close" aria-label="Close">&times;</button></div>
+    <div class="customizer-body">
+      <div class="customizer-group"><label>Accent color</label><div class="accent-presets">
+        <button type="button" data-accent="blue" title="Blue"></button><button type="button" data-accent="green" title="Green"></button>
+        <button type="button" data-accent="purple" title="Purple"></button><button type="button" data-accent="orange" title="Orange"></button>
+        <button type="button" data-accent="pink" title="Pink"></button><button type="button" data-accent="teal" title="Teal"></button>
+      </div></div>
+      <div class="customizer-group"><label>Animation speed</label><input type="range" id="customizer-speed" class="customizer-slider" min="0.5" max="2" step="0.1" value="1"><span id="customizer-speed-value" class="hint">1x</span></div>
+      <div class="customizer-group"><label>Border radius</label><input type="range" id="customizer-radius" class="customizer-slider" min="0" max="24" step="2" value="10"><span id="customizer-radius-value" class="hint">10px</span></div>
+      <div class="customizer-group"><label>Theme</label><select id="customizer-theme"><option value="auto">Auto</option><option value="light">Light</option><option value="dark">Dark</option></select></div>
+      <button type="button" class="customizer-reset">Reset to default</button>
+    </div>
+  </aside>
+  <script src="main.js"></script>
+  <script src="js/customizer.js"></script>
+</body>
+</html>

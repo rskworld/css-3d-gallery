@@ -1,0 +1,227 @@
+/*
+  =============================================================================
+  Home page - Bootstrap homepage style (no Bootstrap library)
+  Author: Molla Samser | rskworld.in | 2026
+  Hero + full-width sections like getbootstrap.com, not card grid.
+  =============================================================================
+*/
+
+/* ----- Hero (Bootstrap-style) ----- */
+.home-hero {
+  padding: 4rem 2rem 3rem;
+  text-align: center;
+}
+
+.home-hero .hero-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: var(--text, #f1f5f9);
+}
+
+.home-hero .hero-title .highlight {
+  color: var(--accent-light, #6ea8fe);
+}
+
+.home-hero .hero-lead {
+  font-size: 1.25rem;
+  color: var(--text-muted, #94a3b8);
+  max-width: 640px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
+
+.home-hero .hero-code-wrap {
+  max-width: 520px;
+  margin: 0 auto 1.5rem;
+  text-align: left;
+}
+
+.home-hero .hero-code {
+  display: block;
+  margin: 0;
+  padding: 1rem 1.25rem;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text, #f1f5f9);
+  background: var(--bg-dark, #0f172a);
+  border: 1px solid var(--border, rgba(255,255,255,0.08));
+  border-radius: var(--bs-border-radius, 0.375rem);
+  overflow-x: auto;
+}
+
+.home-hero .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.home-hero .hero-version {
+  font-size: 0.9375rem;
+  color: var(--text-muted, #94a3b8);
+}
+
+.home-hero .hero-version a {
+  color: var(--accent-light, #6ea8fe);
+  text-decoration: none;
+}
+
+.home-hero .hero-version a:hover {
+  text-decoration: underline;
+}
+
+[data-theme="light"] .home-hero .hero-code {
+  background: #1e293b;
+  border-color: var(--border);
+  color: #e2e8f0;
+}
+
+/* ----- Main content: full-width sections ----- */
+.home-main {
+  padding: 0 0 4rem;
+}
+
+.home-section {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--border, rgba(255,255,255,0.08));
+}
+
+.home-section:last-of-type {
+  border-bottom: none;
+}
+
+.home-section .section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text, #f1f5f9);
+}
+
+.home-section .section-title .highlight {
+  color: var(--accent-light, #6ea8fe);
+}
+
+.home-section .section-lead {
+  font-size: 1.1rem;
+  color: var(--text-muted, #94a3b8);
+  margin-bottom: 1.5rem;
+  max-width: 720px;
+  line-height: 1.6;
+}
+
+.home-section p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: var(--text, #f1f5f9);
+}
+
+.home-section .home-code-wrap {
+  margin: 1rem 0;
+}
+
+.home-section .home-code {
+  display: block;
+  margin: 0;
+  padding: 1rem 1.25rem;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text, #f1f5f9);
+  background: var(--bg-dark, #0f172a);
+  border: 1px solid var(--border, rgba(255,255,255,0.08));
+  border-radius: var(--bs-border-radius, 0.375rem);
+  overflow-x: auto;
+}
+
+.home-section .section-actions {
+  margin-top: 1rem;
+}
+
+.home-section .section-actions .btn {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Featured demos: one row (Bootstrap-style "see it in action") */
+.home-featured {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.home-featured .featured-card {
+  background: var(--bg-card, #1e293b);
+  border: 1px solid var(--border, rgba(255,255,255,0.08));
+  border-radius: var(--bs-border-radius-lg, 0.5rem);
+  padding: 1.5rem;
+  text-align: center;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.home-featured .featured-card:hover {
+  border-color: var(--accent-dim, rgba(13,110,253,0.25));
+  box-shadow: 0 4px 12px var(--shadow, rgba(0,0,0,0.3));
+}
+
+.home-featured .featured-card a {
+  color: var(--text, #f1f5f9);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.home-featured .featured-card a:hover {
+  color: var(--accent-light, #6ea8fe);
+}
+
+.home-featured .featured-demo {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+/* Links list (like Bootstrap's "Read the docs") */
+.home-links {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.home-links li {
+  margin-bottom: 0.5rem;
+}
+
+.home-links a {
+  color: var(--accent-light, #6ea8fe);
+  text-decoration: none;
+}
+
+.home-links a:hover {
+  text-decoration: underline;
+}
+
+[data-theme="light"] .home-section .home-code {
+  background: #1e293b;
+  border-color: var(--border);
+  color: #e2e8f0;
+}
+
+[data-theme="light"] .home-featured .featured-card {
+  background: var(--bg-card);
+  border-color: var(--border);
+}
+
+/* Demo block inside section (full-width doc style) */
+.home-section-demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0;
+  min-height: 140px;
+}
